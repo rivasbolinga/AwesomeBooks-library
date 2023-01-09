@@ -6,9 +6,16 @@ body {
 .form-add {
   display: flex;
   flex-direction: column;
-  gap:20px
+  gap: 20px;
 }
 
 .add-book-btn {
   width: 40px;
+}
+
+.grey-line {
+  width: 100px;
+  height: 1px;
+  background-color: grey;
+  margin: 20px 0 20px 0;
 }
