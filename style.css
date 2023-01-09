@@ -1,0 +1,14 @@
+body {
+  padding-left: 100px;
+  padding-top: 60px;
+}
+
+.form-add {
+  display: flex;
+  flex-direction: column;
+  gap:20px
+}
+
+.add-book-btn {
+  width: 40px;
+}
