@@ -140,7 +140,6 @@ npx eslint .
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
 👤 **Andrea Rivas**
 
@@ -159,7 +158,6 @@ npx eslint .
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **[Navigation bar]**
 - [ ] **[Use of classess]**
