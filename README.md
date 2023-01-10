@@ -62,7 +62,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 [your_project_name] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+- "Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list.
 
 **[your_project__name]** is a...
 
@@ -70,48 +70,14 @@ After you're finished please remove all the comments and instructions!
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
-
-<!-- Features -->
-
-### Key Features <a name="key-features"></a>
-
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+<a href="https://www.w3.org/html/" target="_blank"><img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="55" height="55"/></a><a href="https://www.w3schools.com/css/" target="_blank"><img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="55" height="55"/></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="55" height="55"/></a>
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
+For a live demo to our project, follow the link below
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://rivasbolinga.github.io/AwesomeBooks-library/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -137,65 +103,48 @@ Example command:
 
 ### Setup
 
-Clone this repository to your desired folder:
+- Clone this repository or download the Zip folder:
 
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
 ```
---->
-
-### Install
-
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
+git clone https://github.com/rivasbolinga/AwesomeBooks-library.git
 ```
---->
+
+- Navigate to the location of the folder in your machine:
+
+**``you@your-Pc-name:~$ cd <folder>``**
+
 
 ### Usage
 
-To run the project, execute the following command:
+- After Cloning this repo to your local machine
+- Open the `index.html` in your browser
 
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
 
 ### Run tests
 
-To run tests, run the following command:
+To track linter errors locally follow these steps:  
 
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
+Download all the dependencies run:
 ```
---->
+npm install
+```
+Track HTML linter errors run:
+```
+npx hint .
+```
+Track CSS linter errors run:
+```
+npx stylelint "**/*.{css,scss}"
+```
+Track JavaScript linter errors run:
+```
+npx eslint .
+```
 
 ### Deployment
 
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
+- GitHub Pages was used to deploy this website
+- For more information about publishing sources, see "[About github page](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#publishing-sources-for-github-pages-sites)"
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -205,17 +154,16 @@ Example:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Andrea Rivas**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@rivasbolinga](https://github.com/rivasbolinga)
+- Twitter: [@AndreaRivasPal](https://twitter.com/AndreaRivasPal)
 
-👤 **Author2**
+👤 **Okolo Oshoke**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@lorenzoworx](https://github.com/lorenzoworx)
+- Twitter: [@lorenzoworx](https://twitter.com/lorenzoworx)
+- LinkedIn: [Oshoke Okolo]https://www.linkedin.com/in/oshoke-okolo-665208108/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -225,9 +173,9 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Add book to list]**
+- [ ] **[Remove book from list]**
+- [ ] **[Wireframe UI design]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
