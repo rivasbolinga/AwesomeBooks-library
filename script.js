@@ -16,12 +16,12 @@ class Book {
 //Local Storage
 
 class Storage {
-  static getbooks() {
+  static getBooks() {
     let books;
-    if(localStorage.getItem('book') === null) {
+    if(localStorage.getItem('books') === null) {
       books = [];
     } else {
-      books = JSON.parse(getItem('books'));
+      books = JSON.parse(localStorage.getItem('books'));//
     }
     return books
   }
@@ -56,16 +56,40 @@ class UI {
   }
 }
 
-  
-// display new book
 
-const displayBook = function (newBook) {
-  const html = ` <div class="book-wrapper">
-  <p class="title-display">${newBook.title}</p>
-  <p class="author-display">${newBook.author}</p>
-  <button class="remove-btn" id="${newBook.newId}">Remove </button>
-  <div class="grey-line"></div>
-</div>`;
-  libraryContainer.innerHTML += html;
-  localStorage.setItem('book', JSON.stringify(library)); // LOCAL STORAGE
+
+const addBookPressed = function (e) {
+
+  e.preventDefault();
+  const books = Storage.getBooks();
+  const newTitle = newTitleInput.value;
+  const newAuthor = newAuthorInput.value;
+  let newId;
+  const len = books.length;
+  if (len === 0 || len === null) {
+    newId = 0;
+  } else {
+    newId = books[len - 1].id + 1;
+  }
+  if (newTitle && newAuthor) {
+    const newBook = new Book(newTitle, newAuthor, newId); //
+    UI.addBooktoLibrary(newBook);
+  }
 };
+
+// Function to remove new Book
+
+const removeBook = function (e) {
+  if (e.target.classList.contains('remove-btn')) {
+    const { id } = e.target;
+    library = library.filter((bk) => JSON.stringify(bk.id) !== id);
+    localStorage.setItem('book', JSON.stringify(library)); // LOCAL STORAGE
+    e.target.parentElement.remove();
+  }
+};
+
+  
+///// EVENT LISTENERS
+
+addBtn.addEventListener('click', addBookPressed);
+libraryContainer.addEventListener('click', removeBook);
