@@ -3,7 +3,23 @@ const newTitleInput = document.querySelector('.add-title-input');
 const newAuthorInput = document.querySelector('.add-author-input');
 const libraryContainer = document.querySelector('.library-wrapper');
 
-let library = [];
+const store = JSON.parse(localStorage.getItem("book"));
+
+let library = store ? store : [];
+
+
+const displayBook = function(){
+  library.forEach((element, i) => {
+    const html = ` <div class="book-wrapper">
+  <p class="title-display">${element.title}</p>
+  <p class="author-display">${element.author}</p>
+  <button class="remove-btn" id="${element.newId}">Remove </button>
+  <div class="grey-line"></div>
+</div>`;
+    libraryContainer.innerHTML += html;
+    localStorage.setItem('book', JSON.stringify(library)); // LOCAL STORAGE
+  });
+}
 
 const Book = function (id, title, author) {
   this.id = id;
@@ -13,12 +29,6 @@ const Book = function (id, title, author) {
 
 // Local Storage
 
-const getBook = JSON.parse(localStorage.getItem('library'));
-if (getBook === 0 || getBook === null) {
-  localStorage.setItem('book', JSON.stringify(library));
-} else {
-  library = getBook;
-}
 
 // Function to add and display new books.
 const addBook = function (e) {
@@ -35,14 +45,7 @@ const addBook = function (e) {
   if (newTitle && newAuthor) {
     const newBook = new Book(newId, newTitle, newAuthor);
     library.push(newBook);
-    const html = ` <div class="book-wrapper">
-  <p class="title-display">${newTitle}</p>
-  <p class="author-display">${newAuthor}</p>
-  <button class="remove-btn" id="${newId}">Remove </button>
-  <div class="grey-line"></div>
-</div>`;
-    libraryContainer.innerHTML += html;
-    localStorage.setItem('book', JSON.stringify(library)); // LOCAL STORAGE
+    displayBook(newBook)
   }
 };
 
@@ -50,7 +53,7 @@ const addBook = function (e) {
 const removeBook = function (e) {
   if (e.target.classList.contains('remove-btn')) {
     const { id } = e.target;
-    library = library.filter((bk) => JSON.stringify(bk.id) !== id);
+     library = library.filter((bk) => JSON.stringify(bk.id) !== id);
     localStorage.setItem('book', JSON.stringify(library)); // LOCAL STORAGE
     e.target.parentElement.remove();
   }
@@ -58,3 +61,4 @@ const removeBook = function (e) {
 // Event Listeners
 addBtn.addEventListener('click', addBook);
 libraryContainer.addEventListener('click', removeBook);
+ window.addEventListener('load', displayBook);
