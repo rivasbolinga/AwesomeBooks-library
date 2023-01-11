@@ -6,7 +6,7 @@ const libraryContainer = document.querySelector('.library');
 const listLink = document.querySelector('.nav-list');
 const addLink = document.querySelector('.nav-add');
 const contactLink = document.querySelector('.nav-contact');
-const listSection= document.querySelector('.list-section');
+const listSection = document.querySelector('.list-section');
 const addSection = document.querySelector('.add-section');
 const contactSection = document.querySelector('.contact-section');
 const dateToday = document.querySelector('.date-display');
@@ -14,23 +14,23 @@ let newId = 0;
 
 // NAVBAR INTERACTIONS
 
-listLink.addEventListener('click', function(){
+listLink.addEventListener('click', () => {
   listSection.style.display = 'flex';
   addSection.style.display = 'none';
   contactSection.style.display = 'none';
 });
 
-addLink.addEventListener('click', function(){
+addLink.addEventListener('click', () => {
   addSection.style.display = 'flex';
   listSection.style.display = 'none';
   contactSection.style.display = 'none';
 });
 
-contactLink.addEventListener('click', function(){
+contactLink.addEventListener('click', () => {
   contactSection.style.display = 'flex';
   listSection.style.display = 'none';
   addSection.style.display = 'none';
-})
+});
 
 // class constructor of the book object
 class Book {
@@ -122,5 +122,6 @@ document.addEventListener('DOMContentLoaded', UI.displayBook);
 
 // Display date
 
-const dateDisplay = new Date()
-dateToday.textContent = new Date();
+const dateDisplay = new Date();
+dateToday.textContent = dateDisplay;
+document.addEventListener('DOMContentLoaded', dateToday);
