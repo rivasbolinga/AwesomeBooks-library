@@ -41,7 +41,7 @@
 
 
 
-**[Awesome Library]** is a simple website that displays a list of books and allows you to add and remove books from that list.
+**[Awesome Library]** is a simple application with three different sections that displays a list of books and allows you to add and remove books from that list.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -54,9 +54,10 @@
 ### Key Features <a name="key-features"></a>
 
 <!-- > Describe between 1-3 key features of the application.-->
-- **Add book to the list**
-- **Remove book from the list**
-- **Wireframe UI design**
+- **Navigation bar to navigate through the  application**
+- **Section 1: Library list to see the list of books**
+- **Section 2 : A form to add a book**
+- **Section 3 : Contact section**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- LIVE DEMO -->
@@ -159,8 +160,7 @@ npx eslint .
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[Navigation bar]**
-- [ ] **[Use of classess]**
+- [ ] **[Add a implementation to chose if you have read or not the book]**
 - [ ] **[Better style and design]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
