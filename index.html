@@ -22,28 +22,29 @@
     <p class="date-display"></p>
   </header>
   <section class="list-section hidden" id="list-section">
-    <h1>ALL AWESOME BOOKS</h1>
+    <div class="library-title">
+      <h1 class="title-text">All Awesome books</h1>
+      </div>
     <div class="library" id="book-list">
   </div>
   </section>
   <section class="add-section hidden" id="add-section">
-    <h1 class="add-title">Add a new book</h1>
-    <form class="add-book-form">
-      <div class="title-book-form">
-        <input
-        type="text"
-        placeholder="Title"
-        class="title-book-add"
-        >
-      </div>
-      <div class="author-book-form">
-        <input
-        class="author-book-add"
-        type="text"
-        placeholder="Author">
-      </div>
-      <button class="btn-add">Add</button>
-    </form>
+    <div class="form-add-wrapper">
+      <h2 class="title-form">Add a new book</h2>
+      <form class="form-add">
+        <div class="add-title">
+          <input
+          type="text"
+          placeholder="Title"
+          class="add-title-input">
+        </div>
+        <div class="add-author">
+          <input
+          type="text"
+          placeholder="Author"
+          class="add-author-input">
+        </div>
+        <button class="add-book-btn">Add</button>
   </section>
   <section class="contact-section hidden" id="contact-section">
     <h1 class="contact-title">Contact information</h1>
@@ -57,10 +58,10 @@
   </section>
   <footer>
     <div class="copyright-container">
-      <p class="copy-text">Copyright 2023</p>
+      <p class="copy-text">Copyright 2023 &#169; Andrea Rivas Palacios & Okolo Oshoke</p>
     </div>
   </footer>
 </div>
- <script src="main.js"></script>
+ <script src="script.js"></script>
 </body>
 </html>

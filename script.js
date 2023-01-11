@@ -46,6 +46,7 @@ class Storage {
     }
     return books;
   }
+
   static addBook(book) {
     const books = Storage.getBooks();
     books.push(book);
@@ -60,6 +61,7 @@ class UI {
       UI.addBooktoLibrary(newBook);
     });
   }
+
   static addBooktoLibrary(newBook) {
     newBook.id = newId;
     const html = `
@@ -72,6 +74,7 @@ class UI {
     libraryContainer.innerHTML += html;
     newId += 1;
   }
+
   static clearFields() {
     newTitleInput.value = '';
     newAuthorInput.value = '';
