@@ -4,39 +4,70 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Awesome Books - Library</title>
+  <title>Library</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="library-title">
-    <h1 class="title-text">All Awesome books</h1>
+  <header>
+    <nav class="nav-bar">
+      <p class="nav-title">Awesome Books</p>
+      <ul class="nav-links">
+        <li class="nav-link nav-list"><a class='a-list' href='#list-section'> Book List</a></li>
+        <div class="line"></div>
+        <li class="nav-link nav-add"><a class='a-add' href='#add-section'>Add a Book</a></li>
+        <div class="line"></div>
+        <li class="nav-link nav-contact"><a class='a-contact' href='#contact-section'> Contact</a></li>
+      </ul>
+    </nav>
+    <p class="date-display"></p>
+  </header>
+  
+  <section class="list-section hidden" id="list-section">
+    <h1>ALL AWESOME BOOKS</h1>
+    <div class="library" id="book-list">
   </div>
-  <div class="library-wrapper">
-  </div>
-  <div class="black-line"></div>
-  <div class="form-add-wrapper">
-    <h2 class="title-form">Add a new book</h2>
-    <form class="form-add">
-      <div class="add-title">
-        <input
-        type="text"
-        placeholder="Title"
-        class="add-title-input">
-      </div>
-      <div class="add-author">
-        <input
-        type="text"
-        placeholder="Author"
-        class="add-author-input">
-      </div>
-      <button class="add-book-btn">Add</button>
-    </form>
-  </div>
-<script src="script.js"></script>
+  </section>
+
+  <section class="add-section hidden" id="add-section">
+    <div class="form-add-wrapper">
+      <h2 class="title-form">Add a new book</h2>
+      <form class="form-add">
+        <div class="add-title">
+          <input
+          type="text"
+          placeholder="Title"
+          class="add-title-input">
+        </div>
+        <div class="add-author">
+          <input
+          type="text"
+          placeholder="Author"
+          class="add-author-input">
+        </div>
+        <button class="add-book-btn">Add</button>
+  </section>
+
+  <section class="contact-section hidden" id="contact-section">
+    <h1 class="contact-title">Contact information</h1>
+    <p class="">Do you have any questions or you just want to say "Hello"?</p>
+    <p>You can reach out to us!</p>
+    <ul>
+      <li>Our email andrearivaspalacios@gmail.com</li>
+      <li>Our phone number: 089875789</li>
+      <li>Our address:St Lowrence 45, 1b, London, UK</li>
+    </ul>
+  </section>
+  
+  <footer>
+    <div class="copyright-container">
+      <p class="copy-text">Copyright 2023 &#169; Andrea Rivas Palacios & Okolo Oshoke</p>
+    </div>
+  </footer>
+
+</div>
+ <script src="script.js"></script> 
 </body>
 </html>
-
 
 
 
