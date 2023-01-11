@@ -2,8 +2,31 @@
 const addBtn = document.querySelector('.add-book-btn');
 const newTitleInput = document.querySelector('.add-title-input');
 const newAuthorInput = document.querySelector('.add-author-input');
-const libraryContainer = document.querySelector('.library-wrapper');
+const libraryContainer = document.querySelector('.library');
+const listLink = document.querySelector('.nav-list');
+const addLink = document.querySelector('.nav-add');
+const contactLink = document.querySelector('.nav-contact');
+const listSection = document.querySelector('.list-section');
+const addSection = document.querySelector('.add-section');
+const contactSection = document.querySelector('.contact-section');
+const dateToday = document.querySelector('.date-display');
 let newId = 0;
+// NAVBAR INTERACTIONS
+listLink.addEventListener('click', () => {
+  listSection.style.display = 'flex';
+  addSection.style.display = 'none';
+  contactSection.style.display = 'none';
+});
+addLink.addEventListener('click', () => {
+  addSection.style.display = 'flex';
+  listSection.style.display = 'none';
+  contactSection.style.display = 'none';
+});
+contactLink.addEventListener('click', () => {
+  contactSection.style.display = 'flex';
+  listSection.style.display = 'none';
+  addSection.style.display = 'none';
+});
 // class constructor of the book object
 class Book {
   constructor(title, author, id) {
@@ -90,3 +113,7 @@ const removeBook = function (e) {
 addBtn.addEventListener('click', addBookPressed);
 libraryContainer.addEventListener('click', removeBook);
 document.addEventListener('DOMContentLoaded', UI.displayBook);
+// Display date
+const dateDisplay = new Date();
+dateToday.textContent = dateDisplay;
+document.addEventListener('DOMContentLoaded', dateToday);
