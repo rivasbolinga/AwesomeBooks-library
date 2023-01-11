@@ -1,3 +1,4 @@
+/* eslint-disable max-classes-per-file */
 const addBtn = document.querySelector('.add-book-btn');
 const newTitleInput = document.querySelector('.add-title-input');
 const newAuthorInput = document.querySelector('.add-author-input');
@@ -22,6 +23,7 @@ class Storage {
     }
     return books;
   }
+
   static addBook(book) {
     const books = Storage.getBooks();
     books.push(book);
@@ -36,6 +38,7 @@ class UI {
       UI.addBooktoLibrary(newBook);
     });
   }
+
   static addBooktoLibrary(newBook) {
     newBook.id = newId;
     const html = `
@@ -46,11 +49,12 @@ class UI {
     </div>
   `;
     libraryContainer.innerHTML += html;
-    newId += 1;    
+    newId += 1;
   }
-  static clearFields(){
-    newTitleInput.value = "";
-    newAuthorInput.value = "";
+
+  static clearFields() {
+    newTitleInput.value = '';
+    newAuthorInput.value = '';
   }
 }
 const addBookPressed = function (e) {
