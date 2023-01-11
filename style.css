@@ -6,12 +6,14 @@ body {
   align-items: center;
   font-family: 'Varela Round', sans-serif;
 }
+
 .nav-bar {
   display: flex;
   flex-direction: row;
   border: 2px solid black;
   justify-content: space-around;
 }
+
 .nav-links {
   display: flex;
   list-style: none;
@@ -19,18 +21,22 @@ body {
   justify-content: end;
   font-size: 18px;
 }
+
 .nav-link a {
   color: black;
   text-decoration: none;
 }
+
 .nav-title {
   font-size: 20px;
 }
+
 .line {
   height: 25px;
   background-color: rgba(109, 109, 109, 0.716);
   width: 2px;
 }
+
 .list-section {
   display: none;
   flex-direction: column;
@@ -38,6 +44,7 @@ body {
   align-items: center;
   padding-top: 50px;
 }
+
 .library-wrapper {
   margin-top: 20px;
   border: 2px solid black;
@@ -45,6 +52,7 @@ body {
   flex-direction: column;
   width: 500px;
 }
+
 .book-card {
   display: flex;
   flex-direction: row;
@@ -55,9 +63,11 @@ body {
   background-color: rgba(128, 128, 128, 0.188);
   height: 30px;
 }
+
 .book-details {
   width: 500px;
 }
+
 .add-section {
   display: none;
   flex-direction: column;
@@ -65,49 +75,60 @@ body {
   align-items: center;
   padding-top: 40px;
 }
+
 .add-title {
   font-size: 40px;
 }
+
 .title-book-add {
   height: 20px;
   width: 300px;
 }
+
 .author-book-add {
   height: 20px;
   width: 300px;
   margin-top: 20px;
 }
+
 .btn-add {
   float: right;
   margin-top: 20px;
 }
+
 .contact-section {
   display: none;
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
 }
+
 footer {
   border: 2px solid black;
   margin-top: 50px;
 }
+
 .copy-text {
   margin-left: 20px;
 }
+
 .black-line {
   height: 2px;
   width: 100px;
   margin-top: 20px;
 }
+
 .title-form {
   font-size: 30px;
   font-family: 'Varela Round', sans-serif;
   margin-left: 100px;
 }
+
 form {
   display: flex;
   flex-direction: column;
 }
+
 .add-title-input,
 .add-author-input {
   width: 400px;
@@ -116,16 +137,19 @@ form {
   height: 20px;
   border-radius: 3px;
 }
+
 .add-title-input::placeholder {
   color: black;
   font-family: 'Varela Round', sans-serif;
   font-size: 15px;
 }
+
 .add-author-input::placeholder {
   color: black;
   font-family: 'Varela Round', sans-serif;
   font-size: 15px;
 }
+
 .add-book-btn {
   align-self: flex-end;
   width: 55px;
@@ -135,6 +159,7 @@ form {
   font-family: 'Varela Round', sans-serif;
   border: 3px solid black;
 }
+
 .remove-btn {
   width: 70px;
   background-color: white;
@@ -144,10 +169,12 @@ form {
   border: 3px solid black;
   align-self: center;
 }
+
 .book-wrapper {
   display: flex;
   flex-direction: row;
 }
+
 .book-position {
   width: 420px;
 }
