@@ -91,8 +91,10 @@
 }
 
 footer {
+  margin-top: 200px;
   border: 2px solid black;
-  margin-top: 50px;
+  align-self: flex-end;
+  justify-self: end;
 }
 
 .copy-text {
@@ -168,4 +170,12 @@ form {
 .title-text {
   font-family: 'Varela Round', sans-serif;
   font-size: 30px;
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
