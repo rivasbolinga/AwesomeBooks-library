@@ -141,6 +141,11 @@ form {
   border: 3px solid black;
 }
 
+.date-display {
+  float: right;
+  margin-top: 20px;
+}
+
 .remove-btn {
   width: 70px;
   background-color: white;
@@ -163,9 +168,4 @@ form {
 .title-text {
   font-family: 'Varela Round', sans-serif;
   font-size: 30px;
-}
-
-.date-display {
-  float: right;
-  margin-top: 20px;
 }
