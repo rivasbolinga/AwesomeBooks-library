@@ -7,10 +7,6 @@ const bookLine = document.querySelector('book-wrapper');
 // class constructor of the book object
 class Book {
   constructor(title, author, id) {
-
-//class constructor of the book object
-class Book {
-  constructor(title,author,id) {
     this.author = author;
     this.title = title;
     this.id = id;
@@ -90,7 +86,7 @@ const removeBook = function (e) {
     e.target.parentElement.remove();
   }
 };
-// EVENT LISTENERS
+/// // EVENT LISTENERS
 addBtn.addEventListener('click', addBookPressed);
 libraryContainer.addEventListener('click', removeBook);
 document.addEventListener('DOMContentLoaded', UI.displayBook);
