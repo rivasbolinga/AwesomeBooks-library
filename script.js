@@ -3,7 +3,6 @@ const newTitleInput = document.querySelector('.add-title-input');
 const newAuthorInput = document.querySelector('.add-author-input');
 const libraryContainer = document.querySelector('.library-wrapper');
 let newId = 0;
-const bookLine = document.querySelector('book-wrapper');
 // class constructor of the book object
 class Book {
   constructor(title, author, id) {
@@ -47,10 +46,7 @@ class UI {
     </div>
   `;
     libraryContainer.innerHTML += html;
-    newId += 1;
-    if (newBook.id % 2 === 0) {
-      document.querySelectorAll('.book-wrapper').forEach((e) => e.style.backgroundColor = 'rgba(206, 203, 203, 0.525)');
-    }
+    newId += 1;    
   }
   static clearFields(){
     newTitleInput.value = "";
