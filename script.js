@@ -11,27 +11,38 @@ const addSection = document.querySelector('.add-section');
 const contactSection = document.querySelector('.contact-section');
 const dateToday = document.querySelector('.date-display');
 let newId = 0;
-
 // NAVBAR INTERACTIONS
+<<<<<<< HEAD
 
+=======
+>>>>>>> 11ebb1a5c1b3114057be752d671b21e29c290c98
 listLink.addEventListener('click', () => {
   listSection.style.display = 'flex';
   addSection.style.display = 'none';
   contactSection.style.display = 'none';
 });
+<<<<<<< HEAD
 
+=======
+>>>>>>> 11ebb1a5c1b3114057be752d671b21e29c290c98
 addLink.addEventListener('click', () => {
   addSection.style.display = 'flex';
   listSection.style.display = 'none';
   contactSection.style.display = 'none';
 });
+<<<<<<< HEAD
 
+=======
+>>>>>>> 11ebb1a5c1b3114057be752d671b21e29c290c98
 contactLink.addEventListener('click', () => {
   contactSection.style.display = 'flex';
   listSection.style.display = 'none';
   addSection.style.display = 'none';
 });
+<<<<<<< HEAD
 
+=======
+>>>>>>> 11ebb1a5c1b3114057be752d671b21e29c290c98
 // class constructor of the book object
 class Book {
   constructor(title, author, id) {
@@ -115,13 +126,14 @@ const removeBook = function (e) {
   }
 };
 /// // EVENT LISTENERS
-
 addBtn.addEventListener('click', addBookPressed);
 libraryContainer.addEventListener('click', removeBook);
 document.addEventListener('DOMContentLoaded', UI.displayBook);
-
 // Display date
+<<<<<<< HEAD
 
+=======
+>>>>>>> 11ebb1a5c1b3114057be752d671b21e29c290c98
 const dateDisplay = new Date();
 dateToday.textContent = dateDisplay;
 document.addEventListener('DOMContentLoaded', dateToday);
