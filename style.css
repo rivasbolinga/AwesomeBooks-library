@@ -44,15 +44,13 @@
   width: 500px;
 }
 
-.book-card {
+.book-wrapper {
   display: flex;
   flex-direction: row;
-  padding-left: 20px;
-  font-size: 16px;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(128, 128, 128, 0.188);
-  height: 30px;
+}
+
+.book-wrapper:nth-child(odd) {
+  background-color: rgba(168, 168, 168, 0.852);
 }
 
 .book-details {
@@ -91,10 +89,10 @@
 }
 
 footer {
-  margin-top: 200px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   border: 2px solid black;
-  align-self: flex-end;
-  justify-self: end;
 }
 
 .copy-text {
@@ -158,11 +156,6 @@ form {
   align-self: center;
 }
 
-.book-wrapper {
-  display: flex;
-  flex-direction: row;
-}
-
 .book-position {
   width: 420px;
 }
@@ -178,4 +171,57 @@ form {
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+    justify-content: end;
+    font-size: 15px;
+    gap: 20px;
+  }
+
+  .nav-title {
+    display: none;
+  }
+
+  .line {
+    height: 25px;
+    background-color: rgba(109, 109, 109, 0.716);
+    width: 2px;
+  }
+
+  .title-form {
+    font-size: 25px;
+    margin: 25px;
+  }
+
+  .add-title-input,
+  .add-author-input {
+    width: 250px;
+  }
+
+  footer {
+    position: relative;
+    margin-top: 60px;
+  }
+
+  .library {
+    width: 280px;
+  }
+
+  .library-title {
+    font-size: 25px;
+  }
 }

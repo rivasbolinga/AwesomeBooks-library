@@ -114,6 +114,28 @@ addBtn.addEventListener('click', addBookPressed);
 libraryContainer.addEventListener('click', removeBook);
 document.addEventListener('DOMContentLoaded', UI.displayBook);
 // Display date
-const dateDisplay = new Date();
-dateToday.textContent = dateDisplay;
-document.addEventListener('DOMContentLoaded', dateToday);
+const dateDisplay = function () {
+  const date = new Date();
+  const dateString = date.toDateString().split(' ');
+  const day = dateString[2];
+  const month = dateString[1];
+
+  const year = date.getFullYear();
+  const hour = date.getHours();
+  const min = date.getMinutes();
+  const sec = date.getSeconds();
+  let amOrPm = '';
+
+  if (hour > 12) {
+    amOrPm = 'PM';
+  } else {
+    amOrPm = 'AM';
+  }
+
+  dateToday.textContent = ` ${month} ${day} ${year}, ${hour}:${min}:${sec} ${amOrPm}`;
+  setTimeout(dateDisplay, 1000);
+};
+
+document.addEventListener('DOMContentLoaded', dateDisplay);
+
+// Jan 12th 2023, 11:18:11 am
